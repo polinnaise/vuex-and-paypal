@@ -27,8 +27,8 @@ export default {
         },
         {
           id: 2,
-          text: 'Mendesian',
-          page:'/exhibitions/mendesian'
+          text: 'Webshop',
+          page:'/webshop'
         },
         {
           id: 3,

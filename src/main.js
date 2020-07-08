@@ -1,13 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Vuex from 'vuex'
 import Router from "vue-router";
 import Home from "./components/home";
 import Bio from "./components/bio";
-import Mendesian from "./components/mendesian";
+import Publications from "./components/publications";
+import Webshop from "./components/webshop";
 import Mummification from "./components/mummification";
 import Conferences from "./components/conferences";
 import InvitedLectures from "./components/invited_lectures";
+import store from './store';
 
+Vue.use(Vuex)
 Vue.use(Router);
 const router = new Router({
   routes: [
@@ -22,9 +26,9 @@ const router = new Router({
       component: Bio
     },
     {
-      path: '/exhibitions/mendesian',
-      name: 'Mendesian',
-      component: Mendesian
+      path: '/webshop',
+      name: 'Webshop',
+      component: Webshop
     },
     {
       path: '/exhibitions/mummification',
@@ -42,23 +46,8 @@ const router = new Router({
     },
     {
       path: '/publications/',
-      name: 'Bio',
-      component: Bio
-    },
-    {
-      path: '/workshops',
-      name: 'Bio',
-      component: Bio
-    },
-    {
-      path: '/smellkits/',
-      name: 'Bio',
-      component: Bio
-    },
-    {
-      path: '/media/',
-      name: 'Bio',
-      component: Bio
+      name: 'Publications',
+      component: Publications
     }
   ]
 })
@@ -67,5 +56,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
