@@ -9,40 +9,34 @@ export default new Vuex.Store({
     items: [
         {
             id: 1,
-            name: 'Chelsea boots',
-            sizes: [3, 4, 5, 6, 7, 8],
-            price: 45
+            name: 'Ancient Egyptian Smell Kit',
+            sizes: [1, 2, 3, 4, 5],
+            price: 120
         },
         {
             id: 2,
-            name: 'Knitted sock boots',
-            sizes: [3, 4, 5, 6, 7, 8],
-            price: 80
+            name: 'Mummy Kit',
+            sizes: [1, 2, 3, 4, 5],
+            price: 100
         },
         {
             id: 3,
-            name: 'Square toe ankle boots',
-            sizes: [4, 5, 7, 8],
-            price: 40
+            name: 'Temple Kit',
+            sizes: [1, 2, 3, 4, 5],
+            price: 100
         },
         {
             id: 4,
-            name: 'Chunky Chelsea boots',
-            sizes: [3, 4, 5, 6, 7],
-            price: 60
+            name: 'Aphrodisiac Kit',
+            sizes: [1, 2, 3, 4, 5],
+            price: 100
         },
         {
             id: 5,
-            name: 'Patent ankle boots',
-            sizes: [3, 4, 5, 8],
-            price: 70
-        },
-        {
-            id: 6,
-            name: 'Black studded Chelsea Boots',
-            sizes: [8],
+            name: 'Kyphi Kit',
+            sizes: [1, 2, 3, 4, 5],
             price: 100
-        },
+        }
     ],
     cart: []
   },

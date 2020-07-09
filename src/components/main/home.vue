@@ -42,8 +42,8 @@
 
 .pic-ctn {
   position: relative;
-  width: 100vw;
-  height: 300px;
+  width: 50%;
+  height: 50%;
   margin-top: 15vh;
 }
 

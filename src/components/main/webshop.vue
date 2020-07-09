@@ -1,9 +1,8 @@
 <template>
   <div>
-    <div class="header">
-      <h1>The Boot Store</h1>
- 
-      <shopping-cart :cart="shoppingCart"></shopping-cart>
+    <div>
+    <shopping-cart :cart="shoppingCart"></shopping-cart>
+    <h4>Smell Kits</h4>
     </div>
  
     <section class="items-container">
@@ -11,13 +10,12 @@
       :key="product.key"
       :item="product"></item>
     </section>
-
   </div>
 </template>
 
 <script>
-import Item from './item.vue';
-import ShoppingCart from './shoppingCart.vue'
+import Item from '../webshop/item.vue';
+import ShoppingCart from '../webshop/shoppingCart.vue'
 
 export default {
   components: {

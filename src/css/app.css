@@ -5,25 +5,36 @@
     border-color: black;
 } */
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
 * {
     box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Avenir, sans-serif;
-  }
-  h1 {
-    font-size: 1.2em;
-  }
-  .header {
-    background: #2d2d2d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 10px 15px;
-    margin: 0;
   }
   .items-container {
     display: flex;
@@ -40,7 +51,7 @@
   button {
     width: 140px;
     -webkit-appearance: none;
-    background-color: #1d85ca;
+    background-color: violet;
     color: white;
     border-radius: 5px;
     font-size: 0.9em;

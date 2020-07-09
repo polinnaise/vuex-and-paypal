@@ -2,13 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import Vuex from 'vuex'
 import Router from "vue-router";
-import Home from "./components/home";
-import Bio from "./components/bio";
-import Publications from "./components/publications";
-import Webshop from "./components/webshop";
-import Mummification from "./components/mummification";
-import Conferences from "./components/conferences";
-import InvitedLectures from "./components/invited_lectures";
+import Home from "./components/main/home";
+import Bio from "./components/main/bio";
+import Publications from "./components/main/publications";
+import Webshop from "./components/main/webshop";
+import Ancient from "./components/webshop/ancientEgyptian";
+import Mummification from "./components/main/mummification";
+import Conferences from "./components/main/conferences";
+import InvitedLectures from "./components/main/invited_lectures";
 import store from './store';
 
 Vue.use(Vuex)
@@ -29,6 +30,11 @@ const router = new Router({
       path: '/webshop',
       name: 'Webshop',
       component: Webshop
+    },
+    {
+      path: '/webshop/ancient_egyptian',
+      name: 'Ancient Egyptian',
+      component: Ancient
     },
     {
       path: '/exhibitions/mummification',
