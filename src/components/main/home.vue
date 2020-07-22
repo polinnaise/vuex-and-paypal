@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text" style="height:600px; width:100%;">
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />
@@ -8,7 +8,6 @@
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
@@ -16,20 +15,22 @@
   overflow: hidden;
   visibility: visible;
   position: absolute;
-  width:100%;
+  width:60%;
   opacity: 1;
 }
 
 .fade-enter,
 .fade-leave-to {
   visibility: hidden;
-  width:100%;
+  width:50%;
   opacity: 0;
 }
 
 img {
-  height:600px;
-  width:100%
+  height:400px;
+  width:60%;
+  margin-left: 10%;
+  margin-top: 20px;
 }
 </style>
 
@@ -55,7 +56,7 @@ export default {
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 2000);
+      this.timer = setInterval(this.next, 5000);
     },
 
     next: function() {
