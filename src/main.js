@@ -3,14 +3,15 @@ import App from './App.vue'
 import Vuex from 'vuex'
 import Router from "vue-router";
 import Home from "./components/main/home";
-import Bio from "./components/main/bio";
-import Publications from "./components/main/publications";
+import Bio from "./components/main/bio/bio";
+import Publications from "./components/publications/publications";
 import Webshop from "./components/main/webshop";
 import Ancient from "./components/webshop/ancientEgyptian";
 import Mummification from "./components/main/mummification";
 import Conferences from "./components/main/conferences";
 import InvitedLectures from "./components/main/invited_lectures";
 import store from './store';
+import vuetify from './plugins/vuetify';
 
 Vue.use(Vuex)
 Vue.use(Router);
@@ -63,5 +64,6 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')

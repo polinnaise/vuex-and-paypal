@@ -5,11 +5,16 @@
     border-color: black;
 } */
 
+html {
+  border: 5px solid black;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  background-color: white;
+  width: 500px;
   margin: auto;
   text-align: center;
+  line-height: unset;
 }
 
 .price {
@@ -26,20 +31,14 @@
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
+  margin-bottom: 20px;
 }
-
-.card button:hover {
-  opacity: 0.7;
-}
-
-* {
-    box-sizing: border-box;
-  }
   .items-container {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    margin-left: 5%;
   }
   select {
     width: 140px;
@@ -49,14 +48,14 @@
     font-size: 1em;
   }
   button {
-    width: 140px;
     -webkit-appearance: none;
-    background-color: violet;
+    background-color: black;
+    text-transform: uppercase;
     color: white;
-    border-radius: 5px;
     font-size: 0.9em;
-    height: 56px;
+    height: 50px;
     cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
   }
   select {
     cursor: pointer;
@@ -77,85 +76,17 @@ h4 {
     border-bottom: 1px solid black;
 }
 
-/* .goldie {
-    border-bottom: 1px solid #D7D7D7;
-} */
-
-.logo {
-    width: 92px;
-    height:82px;
-}
-
-.nav-link {
-    color: black;
-    text-align: end;
-    font-size: large;
-    height: 40%;
-}
-
-.nav-link:focus, .nav-link:hover {
-    color: #D7D7D7;
-}
-
-.nav-link:active {
-    color: #a0138e;
-}
-
 .text {
-    margin: 4%; 
+    margin: 2%; 
     font-size: large;
     text-align: justify;
-    padding: 40px;
-    line-height: 200%;
+    padding: 25px;
+    font-size: large;
+    letter-spacing: 1px;
+    line-height: 1.6;
     background-color: #FCFCFC;
 }
 
 .h2 {
     text-decoration: underline !important;
 }
-
-
-.linkie {
-    text-decoration: none; 
-    color: black;
-}
-
-
-.w-photo {
-    height: 80%;
-    width: 50%;
-    float: right;
-    padding: 10px;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    padding: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: large;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}

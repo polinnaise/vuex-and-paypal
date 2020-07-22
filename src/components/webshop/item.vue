@@ -1,7 +1,7 @@
 <template>
 <div class="Item"> 
   <div class="card">
-  <img src="James.jpg" class="img-what">
+  <img src="./James.jpg" class="img-what">
    <router-link 
             to="/webshop/ancient_egyptian"
             class="router">
@@ -40,10 +40,10 @@
 <style>
 
 .img-what {
-    width:20%;
+    width:50%;
+    margin-top:20px;
 }
 .Item {
-    width: 50%;
     padding: 10px;
 }
 
@@ -53,6 +53,15 @@
     left: 0;
     background: rgba(0,0,0,0.8);
     padding: 10px;
+}
+
+h1 {
+    font-size:20px;
+}
+
+.router {
+    text-decoration: none;
+    color: black;
 }
 
 </style>

@@ -1,12 +1,17 @@
 <template>
   <div>
-    <h3>DORA GOLDSMITH</h3>
+    <br><br>
     <ul id="menu">
   <li>
     <router-link to="/">Home</router-link>
   </li>
   <li>
-    <router-link to="/bio">Bio</router-link>
+  <li><router-link to="/bio">Bio</router-link>
+    <ul>
+    <li><a href="">TV Interviews</a></li>
+    <li><a href="">Radio Interviews</a></li>
+    <li><a href="">Mendesian</a></li>
+    </ul>
   </li>
   <li>
     <router-link to="/publications">Publications</router-link>
@@ -32,17 +37,14 @@
     <li><a href="">Garden Scent</a></li>
     <li><a href="">Lovemaking & Sexuality</a></li>
     <li><a href="">Unguent Cones</a></li>
+    <li><a href="">Tickets</a></li>
     </ul>
   </li>
   <li>
     <router-link to="/webshop">Smell Kits</router-link>
   </li>
-  <li><a href="">Media</a>
-    <ul>
-    <li><a href="">TV Interviews</a></li>
-    <li><a href="">Radio Interviews</a></li>
-    <li><a href="">Mendesian</a></li>
-    </ul>
+  <li>
+    <router-link to="/contact">Contact</router-link>
   </li>
 </ul>
   </div>
@@ -82,7 +84,6 @@ ul li a
     background: transparent;
     margin-left: 1px;
     white-space: nowrap;
-    border-bottom: 0.5px solid goldenrod; 
     width:50%;
     padding-right: 30px;
 }

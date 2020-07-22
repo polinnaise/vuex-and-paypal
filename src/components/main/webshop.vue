@@ -1,8 +1,7 @@
 <template>
-  <div>
+  <div class="text">
     <div>
     <shopping-cart :cart="shoppingCart"></shopping-cart>
-    <h4>Smell Kits</h4>
     </div>
  
     <section class="items-container">
