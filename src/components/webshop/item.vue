@@ -1,21 +1,19 @@
 <template>
 <div class="Item"> 
-  <div class="card">
-  <img src="./James.jpg" class="img-what">
-   <router-link 
-            to="/webshop/ancient_egyptian"
-            class="router">
-            <h1>Ancient Egyptian Smell Kit</h1>
-	</router-link>
-  <p class="price">120€</p>
-  <p><button @click="addToCart(item)">Add to Cart</button></p>
-</div>
+    <div class="image">
+           <img :src=item.image>
+           <p class="item-name">{{item.name}}</p>
+           <p class="item-price">${{item.price}}</p>
+       </div>
+ <div id="ItemAddButton">
+               <button @click="addToCart(item)">Add To Cart</button>
+           </div>
+
 </div>
 </template>
 
 <script>
-
-    export default {
+export default {
         name: 'item',
         props: ['item'],
         data() {
@@ -25,6 +23,7 @@
         },
         methods: {
             addToCart(item) {
+                if(this.size !== '') {
                     this.$store.commit({
                         type: 'addToCart',
                         id: item.id,
@@ -32,6 +31,7 @@
                         size: this.size,
                         price: item.price
                     })
+                }
             }
         }
     }
@@ -44,7 +44,7 @@
     margin-top:20px;
 }
 .Item {
-    padding: 10px;
+    padding: 30px;
 }
 
 .item-name {
@@ -53,15 +53,21 @@
     left: 0;
     background: rgba(0,0,0,0.8);
     padding: 10px;
+    color:white;
 }
 
 h1 {
-    font-size:20px;
+    font-size: 20px;
 }
 
 .router {
     text-decoration: none;
     color: black;
+}
+
+img {
+    width:250px;
+    height:300px;
 }
 
 </style>

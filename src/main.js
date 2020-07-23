@@ -6,12 +6,12 @@ import Home from "./components/main/home";
 import Bio from "./components/main/bio/bio";
 import Publications from "./components/publications/publications";
 import Webshop from "./components/main/webshop";
-import Ancient from "./components/webshop/ancientEgyptian";
+import Details from "./components/main/details";
 import Mummification from "./components/main/mummification";
 import Conferences from "./components/main/conferences";
 import InvitedLectures from "./components/main/invited_lectures";
+import Contact from "./components/main/contact";
 import store from './store';
-import vuetify from './plugins/vuetify';
 
 Vue.use(Vuex)
 Vue.use(Router);
@@ -33,9 +33,9 @@ const router = new Router({
       component: Webshop
     },
     {
-      path: '/webshop/ancient_egyptian',
-      name: 'Ancient Egyptian',
-      component: Ancient
+      path: '/webshop/details/:id',
+      name: 'Details',
+      component: Details
     },
     {
       path: '/exhibitions/mummification',
@@ -55,6 +55,11 @@ const router = new Router({
       path: '/publications/',
       name: 'Publications',
       component: Publications
+    },
+    {
+      path: '/contact/',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })
@@ -64,6 +69,5 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
-  vuetify,
   render: h => h(App)
 }).$mount('#app')

@@ -1,6 +1,6 @@
 <template>
     <div class="basket">
-        <p><img src="./basket.png">{{cart.length}}</p>
+        <p>{{cart.length}}</p>
     </div>
 </template>
 
@@ -17,9 +17,6 @@ export default {
 <style>
 p {
     margin: 0;
-}
-img {
-    width: 20%;
 }
 .basket {
     width: 20%;

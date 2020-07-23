@@ -1,5 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import A from './components/webshop/a.jpg'
+import A4 from './components/webshop/a4.jpg'
+import M from './components/webshop/m.jpeg'
+import T from './components/webshop/t.jpg'
+import B from './components/webshop/b.jpeg'
+import K from './components/webshop/k.jpg'
 
 Vue.use(Vuex);
 
@@ -10,32 +16,38 @@ export default new Vuex.Store({
         {
             id: 1,
             name: 'Ancient Egyptian Smell Kit',
-            sizes: [1, 2, 3, 4, 5],
-            price: 120
+            price: 120,
+            image: A
         },
         {
             id: 2,
             name: 'Mummy Kit',
-            sizes: [1, 2, 3, 4, 5],
-            price: 100
+            price: 130,
+            image: M
         },
         {
             id: 3,
             name: 'Temple Kit',
-            sizes: [1, 2, 3, 4, 5],
-            price: 100
+            price: 150,
+            image: T
         },
         {
             id: 4,
             name: 'Aphrodisiac Kit',
-            sizes: [1, 2, 3, 4, 5],
-            price: 100
+            price: 130,
+            image: A4
         },
         {
             id: 5,
             name: 'Kyphi Kit',
-            sizes: [1, 2, 3, 4, 5],
-            price: 100
+            price: 120,
+            image: K
+        },
+        {
+            id: 6,
+            name: 'Botanical Kit',
+            price: 70,
+            image: B
         }
     ],
     cart: []
