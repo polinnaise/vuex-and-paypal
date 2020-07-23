@@ -1,5 +1,5 @@
 <template>
-  <div class="text">
+  <div>
     <div>
     <shopping-cart :cart="shoppingCart"></shopping-cart>
     <h4>Smell Kits</h4>
@@ -8,8 +8,7 @@
     <section class="items-container">
     <item v-for="product in products"
       :key="product.key"
-      :item="product"
-      ></item>
+      :item="product"></item>
     </section>
   </div>
 </template>

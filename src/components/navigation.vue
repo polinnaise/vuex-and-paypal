@@ -29,15 +29,15 @@
     <li><a href="">Lecture Series</a></li>
     </ul>
   </li>
-  <li><a href="">Workshop</a>
+  <li><a style="cursor:auto;">Workshop</a>
     <ul>
-    <li><a href="">Kyphi</a></li>
-    <li><a href="">Mummification</a></li>
-    <li><a href="">Temple Scent</a></li>
-    <li><a href="">Garden Scent</a></li>
-    <li><a href="">Lovemaking & Sexuality</a></li>
-    <li><a href="">Unguent Cones</a></li>
-    <li><a href="">Tickets</a></li>
+    <li><router-link to="/workshop/kyphi">Kyphi</router-link></li>
+    <li><router-link to="/workshop/mummification">Mummification</router-link></li>
+    <li><router-link to="/workshop/lovemaking">Lovemaking</router-link></li>
+    <li><router-link to="/workshop/garden_scent">Garden Scent</router-link></li>
+    <li><router-link to="/workshop/temple_smell">Temple Smell</router-link></li>
+    <li><router-link to="/workshop/unguent_cones">Unguent Cones</router-link></li>
+    <li><router-link to="/workshop/online_workshops">Online Workshops</router-link></li>
     </ul>
   </li>
   <li>
@@ -68,12 +68,14 @@ ul li
     position: relative;
     display: inline-block;
     float: none;
+    text-align: left;
 }
 
 li ul
 {
     display: none;
     background-color: white;
+    text-align: left;
 }
 
 ul li a 
@@ -86,6 +88,7 @@ ul li a
     white-space: nowrap;
     width:50%;
     padding-right: 30px;
+    text-align: left;
 }
 
 ul li a:hover 
