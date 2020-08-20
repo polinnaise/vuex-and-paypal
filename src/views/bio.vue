@@ -3,7 +3,7 @@
     <h4>BIO</h4>
     <p>Dora Goldsmith is a PhD student of Egyptology at the Freie Universität Berlin. The topic of her PhD project is the sense of smell in ancient Egypt, the exact title of her research being The Archaeology of Smell in Ancient Egypt. 
       A Cultural Anthropological Study Based on Written Sources. Dora holds a Master of Arts in Egyptology from the Freie Universität Berlin and a Bachelor of Arts in Archaeology (Biblical Archaeology and Classical Archaeology) and Ancient Near Eastern Studies (Egyptology and Assyriology) from the Hebrew University of Jerusalem.
-    <img src="./d.png">
+    <img src="../assets/d.png">
     </p>
     <p>
       Dora’s PhD research focuses on the role the sense of smell played in ancient Egypt based on written evidence. The examination of olfaction in an ancient society belongs to the relatively new field of the archaeology of the senses. 

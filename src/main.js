@@ -1,22 +1,25 @@
 import Vue from 'vue'
 import App from './App.vue'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LoadScript from 'vue-plugin-load-script';
 import Vuex from 'vuex'
 import Router from "vue-router";
-import Home from "./components/d/home";
-import Bio from "./components/main/bio/bio";
-import Publications from "./components/publications/publications";
-import Cones from "./components/main/workshops/cones";
-import Garden from "./components/main/workshops/garden";
-import Kyphi from "./components/main/workshops/kyphi";
-import Love from "./components/main/workshops/love";
-import Mummy from "./components/main/workshops/mummy";
-import Online from "./components/main/workshops/online";
-import Temple from "./components/main/workshops/temple";
-import Webshop from "./components/main/webshop";
-import Details from "./components/main/details";
-import Contact from "./components/main/contact";
+import Home from "./views/d/home";
+import Bio from "./views/bio";
+import Mendesian from "./views/bio/mendesian.vue";
+import Publications from "./views/publications/publications";
+import MendesianExi from "./views/exhibitions/exi-mendesian.vue";
+import MummificationExi from "./views/exhibitions/exi-mummification.vue";
+import Conferences from "./views/lectures/conferences";
+import Invited from "./views/lectures/invited_lectures";
+import Lecture from "./views/lectures/lecture_series";
+import OClasses from "./views/lectures/online_classes";
+import Webshop from "./views/webshop";
+import Details from "./views/details";
+import Contact from "./views/contact";
 import store from './store';
-
+Vue.use(LoadScript);
 Vue.use(Vuex)
 Vue.use(Router);
 const router = new Router({
@@ -32,6 +35,11 @@ const router = new Router({
       component: Bio
     },
     {
+      path: '/bio/mendesian',
+      name: 'Mendesian',
+      component: Mendesian
+    },
+    {
       path: '/webshop',
       name: 'Webshop',
       component: Webshop
@@ -42,50 +50,45 @@ const router = new Router({
       component: Details
     },
     {
-      path: '/workshop/kyphi',
-      name: 'Kyphi',
-      component: Kyphi
-    },
-    {
-      path: '/workshop/mummification',
-      name: 'Mummy',
-      component: Mummy
-    }
-    , {
-      path: '/workshop/lovemaking',
-      name: 'Love',
-      component: Love
-    },
-    {
-      path: '/workshop/garden_scent',
-      name: 'Garden',
-      component: Garden
-    },
-    {
-      path: '/workshop/temple_smell',
-      name: 'Temple',
-      component: Temple
-    },
-    {
-      path: '/workshop/unguent_cones',
-      name: 'Cones',
-      component: Cones
-    },
-    {
-      path: '/workshop/online_workshops',
-      name: 'Online',
-      component: Online
-    },
-    {
       path: '/publications/',
       name: 'Publications',
       component: Publications
     },
     {
+      path: '/exhibitions/mendesian',
+      name: 'Mendesian',
+      component: MendesianExi
+    },
+    {
+      path: '/exhibitions/mummification',
+      name: 'Mummification',
+      component: MummificationExi
+    },
+    {
+      path: '/lectures/conferences',
+      name: 'Conferences',
+      component: Conferences
+    },
+    {
+      path: '/lectures/invited_lectures',
+      name: 'Invited Lectures',
+      component: Invited
+    },
+    {
+      path: '/lectures/lecture_series',
+      name: 'Lecture Series',
+      component: Lecture
+    },
+    {
+      path: '/lectures/online_classes',
+      name: 'Online Classes',
+      component: OClasses
+    },
+    {
       path: '/contact/',
       name: 'Contact',
       component: Contact
-    }
+    },
   ]
 })
 

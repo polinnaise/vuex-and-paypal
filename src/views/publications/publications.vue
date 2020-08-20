@@ -40,8 +40,8 @@ a {
 }
 
 img {
-    width: 400px !important;
-    height: 500px;
+    width: 300px !important;
+    height: 400px;
     margin-right: 20%;
 }
 </style>

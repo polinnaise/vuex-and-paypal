@@ -1,16 +1,23 @@
 <template>
-	<div id="slideshow">
-  <div class="slide-wrapper">
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
+ <div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/d/1.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/d/2.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/d/3.jpg">
+    </div>
   </div>
+</div>
 </div>
 </template>
 
 <style scoped>
-
+/* 
 #slideshow {
   overflow: hidden;
   height: 510px;
@@ -69,6 +76,6 @@
   70% {margin-left: -1456px;}
   80% {margin-left: -2184px;}
   90% {margin-left: -2184px;}
-}
+} */
 
 </style>

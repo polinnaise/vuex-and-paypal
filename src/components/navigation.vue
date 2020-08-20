@@ -1,6 +1,6 @@
 <template>
   <div>
-    <br><br>
+    <br>
     <ul id="menu">
   <li>
     <router-link to="/">Home</router-link>
@@ -8,9 +8,10 @@
   <li>
   <li><router-link to="/bio">Bio</router-link>
     <ul>
-    <li><a href="">TV Interviews</a></li>
-    <li><a href="">Radio Interviews</a></li>
-    <li><a href="">Mendesian</a></li>
+    <li><router-link to="/bio/sense">Sense of Smell</router-link></li>
+    <li><router-link to="/bio/mendesian">Mendesian</router-link></li>
+    <li><router-link to="/bio/mummification">Mummification</router-link></li>
+    <li><router-link to="/bio/unguent">Unguent Cones</router-link></li>
     </ul>
   </li>
   <li>
@@ -18,15 +19,17 @@
     </li>
   <li><a href="">Exhibitons</a>
     <ul>
-    <li><a href="">Mendesian</a></li>
-    <li><a href="">Mummification</a></li>
+    <li><router-link to="/exhibitions/mendesian">Mendesian</router-link></li>
+    <li><router-link to="/exhibitions/mummification">Mummification</router-link></li>
     </ul>
   </li>
+  <img src="../assets/lotus.svg">
   <li><a href="">Lectures</a>
     <ul>
-    <li><a href="">Conference</a></li>
-    <li><a href="">Invited Lectures</a></li>
-    <li><a href="">Lecture Series</a></li>
+    <li><router-link to="/lectures/conferences">Conference</router-link></li>
+    <li><router-link to="/lectures/invited_lectures">Invited Lectures</router-link></li>
+    <li><router-link to="/lectures/lecture_series">Lecture Series</router-link></li>
+    <li><router-link to="/lectures/online_classes">Online Classes</router-link></li>
     </ul>
   </li>
   <li><a style="cursor:auto;">Workshop</a>
@@ -62,13 +65,19 @@ ul
     text-align: center;
 }
 
+
 ul li
 {
     display: block;
     position: relative;
     display: inline-block;
     float: none;
-    text-align: left;
+    text-align: center;
+}
+
+img {
+  width: 60px;
+  margin-right: 18px;
 }
 
 li ul
@@ -76,24 +85,26 @@ li ul
     display: none;
     background-color: white;
     text-align: left;
+    
 }
 
 ul li a 
 {
     display: block;
     text-decoration: none;
-    color: black;
-    background: transparent;
+    color: black; 
     margin-left: 1px;
     white-space: nowrap;
     width:50%;
     padding-right: 30px;
-    text-align: left;
+    text-align: center;
+    border-bottom: 0.5px solid black;
 }
 
 ul li a:hover 
 {
     color: goldenrod;
+    text-decoration: none;
 
 }
 li:hover ul 
@@ -111,5 +122,6 @@ li:hover li
 li:hover li a:hover 
 {
     color: goldenrod;
+    text-decoration: none;
 }
 </style>

@@ -1,79 +1,67 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import A from './components/webshop/a.jpg'
-import A4 from './components/webshop/a4.jpg'
-import M from './components/webshop/m.jpeg'
-import T from './components/webshop/t.jpg'
-import B from './components/webshop/b.jpeg'
-import K from './components/webshop/k.jpg'
+import A from './assets/a.jpg'
+import A4 from './assets/a4.jpg'
+import M from './assets/m.jpeg'
+import T from './assets/t.jpg'
+import B from './assets/b.jpeg'
+import K from './assets/k.jpg'
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   // state is the same as what would typically go inside of the data object when using Vue without Vuex.
   state: {
-    items: [
+    forSale: [
         {
-            id: 1,
+            invId: 1,
             name: 'Ancient Egyptian Smell Kit',
             price: 120,
             image: A
         },
         {
-            id: 2,
+            invId: 2,
             name: 'Mummy Kit',
             price: 130,
             image: M
         },
         {
-            id: 3,
+            invId: 3,
             name: 'Temple Kit',
             price: 150,
             image: T
         },
         {
-            id: 4,
+            invId: 4,
             name: 'Aphrodisiac Kit',
             price: 130,
             image: A4
         },
         {
-            id: 5,
+            invId: 5,
             name: 'Kyphi Kit',
             price: 120,
             image: K
         },
         {
-            id: 6,
+            invId: 6,
             name: 'Botanical Kit',
             price: 70,
             image: B
         }
     ],
-    cart: []
+    inCart: []
   },
-  // getters are Vuex's equivalent to computed properties in Vue.
-  // functions here will always contain state as a parameter
   getters: {
-      total: state => {
-            if(state.cart.length > 0) {
-                return state.cart.map(item => item.price).reduce((total, amount) => total + amount);
-            } else {
-                return 0;
-            }
-      }
+    forSale: state => state.forSale,
+    inCart: state => state.inCart,
   },
-  // mutations are essentially functions that update state in some way.
-  // You can think of these as kind of being Vuex's equivalent to Vue's methods.
-    mutations: {
-        addToCart(state, payload) {
-            return state.cart.push(payload);
-        }
-    },
-  // actions are effectively the functions that get called by your components in order to trigger a mutation.
+  mutations: {
+    ADD_TO_CART(state, invId) { state.inCart.push(invId); },
+    REMOVE_FROM_CART(state, index) { state.inCart.splice(index, 1); },
+  },
   actions: {
-      // add(context) {
-      //     context.commit('add')
-      // }
-  }
+    addToCart(context, invId) { context.commit('ADD_TO_CART', invId); },
+    removeFromCart(context, index) { context.commit('REMOVE_FROM_CART', index); },
+  },
 })

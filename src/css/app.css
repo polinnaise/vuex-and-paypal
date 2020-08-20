@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:wght@200&display=swap');
 
 html {
-  border: 5px solid black;
+  border: 8px solid black;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
