@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <navigation></navigation>
+    <webshop></webshop>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Navigation from './components/navigation.vue'
+import Webshop from './components/webshop.vue'
 
 export default {
   name: 'App',
   components: {
-    Navigation
+    Webshop
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-3">
     <div class="card">
-      <img :src="image" :alt="name" height="100" class="card-img-top">
+      <img :src="image" class="card-img-top">
       <div class="card-body">
         <h4 class="card-title">{{ name }}</h4>
         <div class="card-text">{{ price | dollars }}</div>

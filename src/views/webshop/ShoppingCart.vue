@@ -88,7 +88,7 @@ export default {
   // mounted: function() {
   //   const script = document.createElement("script");
   //   script.src =
-  //     "https://www.paypal.com/sdk/js?client-id=AUR1YmqZVAkMhlfcF6bcW9oK1hzUwve3lufp7axRrrTzYCOAIZpbOzXPF-TvPDsjqcanmoEcQUiUUL6N";
+  //     "https://www.paypal.com/sdk/js?client-id=ADD-YOUR-ID";
   //   script.addEventListener("load", this.setLoaded);
   //   document.body.appendChild(script);
   // },
