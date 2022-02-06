@@ -1,5 +1,7 @@
 # vuex-and-paypal
 
+![Image](./src/assets/screenshot.png "Front page")
+
 ## Project setup
 ```
 npm install
