@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import A from './assets/A.png'
+import B from './assets/B.png'
+import C from './assets/C.png'
 
 Vue.use(Vuex);
 
@@ -9,18 +12,21 @@ export default new Vuex.Store({
     forSale: [
         {
             invId: 1,
-            name: 'A',
-            price: 120
+            name: 'White Beauty',
+            price: 50,
+            image: A
         },
         {
             invId: 2,
-            name: 'B',
-            price: 130
+            name: 'Sunshine',
+            price: 40,
+            image: B
         },
         {
             invId: 3,
-            name: 'Temple Kit',
-            price: 150
+            name: 'Tenderness',
+            price: 30,
+            image: C
         }
     ],
     inCart: []

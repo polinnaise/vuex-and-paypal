@@ -1,4 +1,4 @@
-# goldsmith
+# vuex-and-paypal
 
 ## Project setup
 ```

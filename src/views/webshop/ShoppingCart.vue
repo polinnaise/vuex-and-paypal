@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="btn btn-primary" data-toggle="modal" data-target="#shoppingCart">Cart ({{ numInCart }})</button>
+    <button class="btn" data-toggle="modal" data-target="#shoppingCart">Cart ({{ numInCart }})</button>
 
     <div id="shoppingCart" class="modal fade">
       <div class="modal-dialog">
@@ -18,7 +18,7 @@
                   <td>{{ item.name }}</td>
                   <td>{{ item.price | dollars }}</td>
                   <td>
-                    <button class="btn btn-sm btn-danger" @click="removeFromCart(index)">&times;</button>
+                    <button class="btn exit-button" @click="removeFromCart(index)">&times;</button>
                   </td>
                 </tr>
                 <tr>
@@ -30,9 +30,14 @@
             </table>
           </div>
           <div class="modal-footer">
+            <div>
+            <button class="btn" data-dismiss="modal">Keep shopping</button>
+            <button id="paypal-button" class="btn">Check out</button>
+            </div>
+            <div>
+            <span>Payment options</span>
             <div id="paypal-button-container"></div>
-            <button class="btn btn-secondary" data-dismiss="modal">Keep shopping</button>
-            <button id="paypal-button" class="btn btn-primary">Check out</button>
+            </div>
           </div>
         </div>
       </div>
